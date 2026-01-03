@@ -11,4 +11,14 @@ public class functions {
         
     }
 
+    public static void viewTasks(){
+        if (todoapp.tasks.get(0)== null){
+            System.out.println("no tasks in hand");
+        }
+        for (int i = 0; i < todoapp.tasks.size(); i++){
+            int no = i + 1;
+            System.out.println(no + ":" + todoapp.tasks.get(i));
+
+        }
+    }
 }

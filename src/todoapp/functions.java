@@ -21,4 +21,12 @@ public class functions {
 
         }
     }
+
+    public static void marksdone(){
+        viewTasks();
+        System.out.println("which task dp you want to make done: ");
+        int no = todoapp.scanner.nextInt();
+        todoapp.tasks.get(no-1).markAsCompleted();
+
+    }
 }

@@ -17,7 +17,7 @@ public class functions {
         }
         for (int i = 0; i < todoapp.tasks.size(); i++){
             int no = i + 1;
-            System.out.println(no + ":" + todoapp.tasks.get(i));
+            System.out.println(no + ": " + todoapp.tasks.get(i).getDescription());
 
         }
     }
@@ -32,7 +32,7 @@ public class functions {
 
     public static void deletetask(){
         viewtasks();
-        System.out.println("which task dp you want to make done: ");
+        System.out.println("which task dp you want to delete done: ");
         int no = todoapp.scanner.nextInt();
         todoapp.tasks.remove(no - 1);
     }
